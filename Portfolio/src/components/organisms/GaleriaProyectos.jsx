@@ -1,33 +1,50 @@
+
 import LinkProyecto from '../atoms/LinkProyecto'
+
+import decohogarImg from '../../assets/projects/decohogar.png'
+import identityImg from '../../assets/projects/IdentitySimulation.png'
 
 const projects = [
     {
-        title: 'Proyecto web',
-        description: 'Aplicación desarrollada como parte de mi formación.',
-        github: 'https://github.com/ShiimiChan',
+        title: 'DecoHogar',
+        description:
+            'Proyecto web enfocado en la decoración del hogar, con una presentación visual de productos e ideas para espacios.',
+        image: decohogarImg,
+        github: 'https://github.com/ostavolari/Evaluacion_Parcial_1-CASO-5_TIENDA_DECOHOGAR.git',
     },
     {
-        title: 'Proyecto de programación',
-        description: 'Otro proyecto que muestra mis conocimientos técnicos.',
-        github: 'https://github.com/ShiimiChan',
+        title: 'Identity Simulation',
+        description:
+            'Plataforma web orientada a artistas y escritores de rol que permite la creación, gestión y organización de contenido creativo, incluyendo personajes, historias (lore) y mundos ficticios.',
+        image: identityImg,
+        github: 'https://github.com/saracchiardi/Identity-Simulation.git',
     },
 ]
 
-function GaleriaProyecto() {
+function GaleriaProyectos() {
     return (
         <div className="project-gallery">
             {projects.map((project) => (
                 <article key={project.title} className="project-card">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
+                    <img
+                        src={project.image}
+                        alt={`Captura del proyecto ${project.title}`}
+                        className="project-image"
+                    />
 
-                    <LinkProyecto href={project.github}>
-                        Ver en GitHub
-                    </LinkProyecto>
+                    <div className="project-info">
+                        <h3>{project.title}</h3>
+
+                        <p>{project.description}</p>
+
+                        <LinkProyecto href={project.github}>
+                            Ver código en GitHub
+                        </LinkProyecto>
+                    </div>
                 </article>
             ))}
         </div>
     )
 }
 
-export default GaleriaProyecto
+export default GaleriaProyectos
