@@ -13,3 +13,13 @@ Object.defineProperty(window, 'matchMedia', {
         dispatchEvent: () => false,
     }),
 })
+
+
+/* Simula ResizeObserver para probar componentes de Ant Design. */
+globalThis.ResizeObserver = class ResizeObserver {
+    observe() {}
+
+    unobserve() {}
+
+    disconnect() {}
+}
