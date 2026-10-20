@@ -1,5 +1,7 @@
+
 import { Layout, Menu } from 'antd'
 
+// Define las opciones que aparecerán en el menú.
 function Navbar() {
     const items = [
         { key: 'sobre-mi', label: 'Sobre mí' },
@@ -9,6 +11,7 @@ function Navbar() {
         { key: 'contacto', label: 'Contacto' },
     ]
 
+    // Busca la sección seleccionada y se desplaza hasta ella.
     function handleClick(info) {
         const section = document.getElementById(info.key)
 
@@ -19,7 +22,9 @@ function Navbar() {
 
     return (
         <Layout.Header className="navbar">
-            <div className="navbar-logo">Mi Portfolio</div>
+            <a href="#sobre-mi" className="navbar-logo">
+                Silvana Reyes
+            </a>
 
             <Menu
                 mode="horizontal"

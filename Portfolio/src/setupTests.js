@@ -15,7 +15,7 @@ Object.defineProperty(window, 'matchMedia', {
 })
 
 
-/* Simula ResizeObserver para probar componentes de Ant Design. */
+//Simula ResizeObserver para probar componentes de Ant Design.
 globalThis.ResizeObserver = class ResizeObserver {
     observe() {}
 

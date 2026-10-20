@@ -1,9 +1,10 @@
-
 import LinkProyecto from '../atoms/LinkProyecto'
 
 import decohogarImg from '../../assets/projects/decohogar.png'
 import identityImg from '../../assets/projects/IdentitySimulation.png'
 
+// Define los datos de los proyectos.
+//Cada objeto contiene título, descripción, imagen y la dirección del repositorio.
 const projects = [
     {
         title: 'DecoHogar',
@@ -21,10 +22,15 @@ const projects = [
     },
 ]
 
+//Componente que muestra todos los proyectos
 function GaleriaProyectos() {
     return (
         <div className="project-gallery">
+            {/* Recorre el arreglo y crea una tarjeta por cada proyecto. */}
             {projects.map((project) => (
+
+                // Representa un proyecto individual.
+                // key ayuda a React a identificar cada elemento de la lista.
                 <article key={project.title} className="project-card">
                     <img
                         src={project.image}
