@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Navbar from '../organisms/Navbar'
 import GaleriaProyectos from '../organisms/GaleriaProyectos.jsx'
 import Formulario from '../organisms/Formulario.jsx'
@@ -7,6 +8,10 @@ import {SolutionOutlined, CalendarOutlined, BankOutlined, ReadOutlined, StarOutl
 
 // Define la plantilla que organiza todo el portafolio.
 function PortfolioTemplate() {
+
+    // Actualiza el título de la pestaña al cargar el portafolio.
+    useEffect(() => {document.title = 'Portafolio | Silvana Reyes Acchiardi'}, [])
+
     return (
         <>
             {/* Barra de navegación con los enlaces a las secciones. */}
