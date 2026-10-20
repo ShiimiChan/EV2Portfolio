@@ -6,7 +6,7 @@ function Portfolio() {
 
     // Renderiza el componente PortfolioTemplate.
     // De esta manera, reutiliza la estructura de la página
-    // sin necesidad de repetir todo su contenido aquí.
+    // sin necesidad de repetir todo su contenido
     return <PortfolioTemplate />
 }
 
