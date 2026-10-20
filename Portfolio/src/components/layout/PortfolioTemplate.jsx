@@ -3,6 +3,7 @@ import GaleriaProyectos from '../organisms/GaleriaProyectos.jsx'
 import Formulario from '../organisms/Formulario.jsx'
 import Footer from '../organisms/Footer'
 import perfil from '../../assets/profile/perfil.JPG'
+import {SolutionOutlined, CalendarOutlined, BankOutlined, ReadOutlined, StarOutlined,} from "@ant-design/icons";
 
 // Define la plantilla que organiza todo el portafolio.
 function PortfolioTemplate() {
@@ -69,48 +70,83 @@ function PortfolioTemplate() {
                     </div>
                 </section>
 
-                {/*Sección Experiencia laboral */}
-                <section id="experiencia" className="experience-section">
-                    <span className="section-label">MI TRAYECTORIA</span>
+                {/* Sección de experiencia laboral */}
+                <section id="experiencia" className="seccion-experiencia">
+                    <div className="titulo-seccion">
+                        <span className="icono-seccion">
+                            <SolutionOutlined />
+                        </span>
 
-                    <h2>Experiencia laboral</h2>
+                        <h2>Experiencia laboral</h2>
+                    </div>
 
-                    <article className="experience-card">
-                        <div className="experience-marker"></div>
+                    <div className="experiencia-card">
+                        <div className="experiencia-icono">
+                            <BankOutlined />
+                        </div>
 
-                        <div className="experience-content">
+                        <div className="experiencia-contenido">
 
-                            <h3>Trainee Desarrolladora — OxigenCL (Abril 2024/Octubre 2024)</h3>
+                            <h3>Trainee Desarrolladora</h3>
+                            <h4>OxigenCL</h4>
+
+                            <p>
+                                Experiencia orientada al aprendizaje y al desarrollo
+                                de habilidades en el área tecnológica.
+                            </p>
 
                             <ul>
-                                <li>
-                                    Apoyo en el mantenimiento y actualización de un sitio web.
-                                </li>
-                                <li>
-                                    Realización de modificaciones menores utilizando PHP.
-                                </li>
-                                <li>
-                                    Apoyo en la puesta en marcha y revisión de sitios web.
-                                </li>
-                                <li>
-                                    Consulta y revisión de información en bases de datos MySQL.
-                                </li>
-                                <li>
-                                    Experiencia práctica en desarrollo web y gestión de datos.
-                                </li>
+                                <li> Apoyo en el mantenimiento y actualización de un sitio web.</li>
+                                <li>Realización de modificaciones menores utilizando PHP.</li>
+                                <li>Apoyo en la puesta en marcha y revisión de sitios web.</li>
+                                <li>Consulta y revisión de información almacenada en bases de datos MySQL.</li>
+                                <li>Adquisición de experiencia práctica en desarrollo web y manejo de bases de datos.</li>
                             </ul>
+
+                            <div className="dato-experiencia">
+                                <CalendarOutlined />
+                                <span>Abril 2024 / Octubre 2024</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
                 </section>
 
-                {/*Sección Estudios */}
-                <section id="estudios">
-                    <h2>Estudios</h2>
-                    <h3>Analista Programador — Duoc UC</h3>
-                    <p>
-                        Actualmente estoy cursando mi formación en programación y desarrollo
-                        de software.
-                    </p>
+                {/* Sección de formación académica */}
+                <section id="estudios" className="seccion-estudios">
+                    <div className="titulo-seccion">
+                        <span className="icono-seccion">
+                            <ReadOutlined />
+                        </span>
+
+                        <h2>Estudios</h2>
+                    </div>
+
+                    <div className="estudios-card">
+                        <div className="estudios-icono">
+                            <ReadOutlined />
+                        </div>
+
+                        <div className="estudios-contenido">
+                            <span className="etiqueta-seccion">
+                                Formación académica
+                            </span>
+
+                            <h3>Analista Programador</h3>
+                            <h4>
+                                <BankOutlined /> Duoc UC
+                            </h4>
+
+                            <p>
+                                Actualmente estoy cursando mi formación en programación
+                                y desarrollo de software.
+                            </p>
+
+                            <div className="dato-estudios">
+                                <StarOutlined />
+                                <span>Aprendizaje y crecimiento continuo</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 {/*Sección Proyectos */}
