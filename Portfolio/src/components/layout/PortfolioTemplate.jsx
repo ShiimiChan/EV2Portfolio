@@ -75,14 +75,18 @@ function PortfolioTemplate() {
                     </div>
                 </section>
 
-                {/* Sección de experiencia laboral */}
+                {/* Sección Experiencia laboral */}
                 <section id="experiencia" className="seccion-experiencia">
                     <div className="titulo-seccion">
                         <span className="icono-seccion">
-                            <SolutionOutlined />
+                            <SolutionOutlined/>
                         </span>
 
+                        <p className="subtitulo-seccion">Mi camino profesional</p>
                         <h2>Experiencia laboral</h2>
+                        <p className="descripcion-seccion">
+                            Cada experiencia es una oportunidad para aprender y crecer.
+                        </p>
                     </div>
 
                     <div className="experiencia-card">
@@ -91,6 +95,9 @@ function PortfolioTemplate() {
                         </div>
 
                         <div className="experiencia-contenido">
+                            <span className="etiqueta-seccion">
+                                Experiencia profesional
+                            </span>
 
                             <h3>Trainee Desarrolladora</h3>
                             <h4>OxigenCL</h4>
@@ -101,7 +108,7 @@ function PortfolioTemplate() {
                             </p>
 
                             <ul>
-                                <li> Apoyo en el mantenimiento y actualización de un sitio web.</li>
+                                <li>Apoyo en el mantenimiento y actualización de un sitio web.</li>
                                 <li>Realización de modificaciones menores utilizando PHP.</li>
                                 <li>Apoyo en la puesta en marcha y revisión de sitios web.</li>
                                 <li>Consulta y revisión de información almacenada en bases de datos MySQL.</li>
@@ -110,20 +117,24 @@ function PortfolioTemplate() {
 
                             <div className="dato-experiencia">
                                 <CalendarOutlined />
-                                <span>Abril 2024 / Octubre 2024</span>
+                                <span>Abril 2024 - Octubre 2024</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Sección de formación académica */}
+                {/* Sección Formación académica */}
                 <section id="estudios" className="seccion-estudios">
                     <div className="titulo-seccion">
                         <span className="icono-seccion">
                             <ReadOutlined />
                         </span>
 
+                        <p className="subtitulo-seccion">Mi formación</p>
                         <h2>Estudios</h2>
+                        <p className="descripcion-seccion">
+                            Construyendo mis conocimientos para mi futuro profesional.
+                        </p>
                     </div>
 
                     <div className="estudios-card">
@@ -174,7 +185,7 @@ function PortfolioTemplate() {
 
             </main>
 
-            {/* Pie de página que se muestra después del contenido principal. */}
+            {/* Pie de página */}
             <Footer />
         </>
     )

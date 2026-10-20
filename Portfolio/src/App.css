@@ -541,3 +541,178 @@ h3 {
     height: 200px;
   }
 }
+
+
+/* ===== EXPERIENCIA LABORAL Y ESTUDIOS ===== */
+
+/* Fondo y decoración de las secciones */
+.seccion-experiencia,
+.seccion-estudios {
+  position: relative;
+  overflow: hidden;
+}
+
+.seccion-experiencia {
+  background: linear-gradient(135deg, #fff9f6, #f9eaf0);
+}
+
+.seccion-estudios {
+  background: linear-gradient(135deg, #f8e8ee, #fff9f6);
+}
+
+/* Encabezados */
+.titulo-seccion {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.icono-seccion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background-color: #f3dce4;
+  color: #91546d;
+  font-size: 28px;
+  box-shadow: 0 5px 15px #5c414812;
+}
+
+.subtitulo-seccion {
+  margin: 18px 0 6px;
+  color: #91546d;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.titulo-seccion h2 {
+  margin-bottom: 12px;
+}
+
+.descripcion-seccion {
+  color: #7a6268;
+  line-height: 1.7;
+}
+
+/* Tarjetas */
+.experiencia-card,
+.estudios-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border: 1px solid #ead9df;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px #5c414810;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.experiencia-card:hover,
+.estudios-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px #5c41481c;
+}
+
+/* Iconos grandes */
+.experiencia-icono,
+.estudios-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  background: #f3dce4;
+  color: #91546d;
+  font-size: 32px;
+}
+
+.estudios-icono {
+  background: #f8e8ee;
+}
+
+/* Contenido */
+.experiencia-contenido,
+.estudios-contenido {
+  flex: 1;
+  min-width: 0;
+}
+
+.etiqueta-seccion {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #f9eaf0;
+  color: #91546d;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.experiencia-contenido h3,
+.estudios-contenido h3 {
+  margin: 0 0 8px;
+  color: #5c4148;
+  font-size: 24px;
+}
+
+.experiencia-contenido h4,
+.estudios-contenido h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  color: #91546d;
+  font-size: 17px;
+}
+
+.experiencia-contenido p,
+.estudios-contenido p {
+  color: #7a6268;
+  line-height: 1.8;
+}
+
+.experiencia-contenido ul {
+  padding-left: 22px;
+  color: #7a6268;
+  line-height: 1.9;
+}
+
+.dato-experiencia,
+.dato-estudios {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #f0e2e7;
+  color: #91546d;
+  font-size: 14px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+  .experiencia-card,
+  .estudios-card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px;
+  }
+
+  .experiencia-contenido h3,
+  .estudios-contenido h3 {
+    font-size: 21px;
+  }
+
+  .icono-seccion {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
